@@ -88,7 +88,7 @@ $var: 1;
 SCSS
       expected_output = <<-CSS
 .foo {
-  baz: 0.33333; }
+  baz: 0.3333333333; }
 CSS
       output = Engine.new(template).render
       assert_equal expected_output, output
