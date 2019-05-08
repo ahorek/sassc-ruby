@@ -3,7 +3,7 @@
 gem_root = File.expand_path('..', __dir__)
 libsass_dir = File.join(gem_root, 'ext', 'libsass')
 
-if !File.directory?(libsass_dir) || Dir.entries(libsass_dir).empty?
+if !File.directory?(libsass_dir) || Dir.empty?(libsass_dir)
   Dir.chdir(gem_root) { system('git submodule update --init') }
 end
 
