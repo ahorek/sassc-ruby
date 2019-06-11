@@ -60,7 +60,7 @@ Dir.chdir(__dir__) do
   $srcs = Dir['libsass/src/**/*.{c,cpp}']
 end
 
-MakeMakefile::LINK_SO << "\nstrip -x $@"
+# MakeMakefile::LINK_SO << "\nstrip -x $@"
 
 # Don't link libruby.
 $LIBRUBYARG = nil
